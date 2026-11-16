@@ -1,0 +1,26 @@
+[project]
+name = "pec00079"
+version = "0.1.0"
+description = "Códigos da disciplina PEC00079 - Otimização estrutural do Programa de Pós-Graduação em Engenharia Civil da Universidade Federal do Rio Grande do Sul"
+authors = [
+    {name = "schaedleralmeida",email = "schaedleralmeida@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy (>=2.5.5,<3.0.0)",
+    "matplotlib (>=3.11.2,<4.0.0)",
+    "scipy (>=1.18.1,<2.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "pec00079", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "ipykernel (>=7.4.0,<8.0.0)"
+]
