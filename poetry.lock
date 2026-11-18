@@ -494,6 +494,129 @@ files = [
 pygments = "*"
 
 [[package]]
+name = "jax"
+version = "0.12.1"
+description = "Differentiate, compile, and transform Numpy code."
+optional = false
+python-versions = ">=3.12"
+groups = ["main"]
+files = [
+    {file = "jax-0.12.1-py3-none-any.whl", hash = "sha256:617d896256e0e3781f5e6b0e5bcdbe49b038d63f69d37dd8de1edf0f1c9f0573"},
+    {file = "jax-0.12.1.tar.gz", hash = "sha256:34b04d0df57f7ce81aacb3ee2c969d7a18e5b729ea5f0bf37969f5c5e010f4a8"},
+]
+
+[package.dependencies]
+jaxlib = "0.12.1"
+ml_dtypes = ">=0.5.0"
+numpy = ">=2.2"
+opt_einsum = "*"
+scipy = ">=1.15"
+
+[package.extras]
+ci = ["jaxlib (==0.12.0.1)"]
+cuda = ["jax-cuda12-plugin[with-cuda] (==0.12.1)", "jaxlib (==0.12.1)"]
+cuda12 = ["jax-cuda12-plugin[with-cuda] (==0.12.1)", "jaxlib (==0.12.1)"]
+cuda12-local = ["jax-cuda12-plugin (==0.12.1)", "jaxlib (==0.12.1)"]
+cuda13 = ["jax-cuda13-plugin[with-cuda] (==0.12.1)", "jaxlib (==0.12.1)"]
+cuda13-local = ["jax-cuda13-plugin (==0.12.1)", "jaxlib (==0.12.1)"]
+k8s = ["kubernetes"]
+minimum-jaxlib = ["jaxlib (==0.12.1)"]
+oneapi = ["jax-oneapi-plugin[with-oneapi] (==0.12.1)", "jaxlib (==0.12.1)"]
+rocm = ["jax-rocm7-plugin[device-all,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm10 = ["jax-rocm10-plugin[device-all,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm10-device-gfx1010 = ["jax-rocm10-plugin[device-gfx1010,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm10-device-gfx1011 = ["jax-rocm10-plugin[device-gfx1011,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm10-device-gfx1012 = ["jax-rocm10-plugin[device-gfx1012,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm10-device-gfx1030 = ["jax-rocm10-plugin[device-gfx1030,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm10-device-gfx1031 = ["jax-rocm10-plugin[device-gfx1031,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm10-device-gfx1032 = ["jax-rocm10-plugin[device-gfx1032,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm10-device-gfx1033 = ["jax-rocm10-plugin[device-gfx1033,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm10-device-gfx1034 = ["jax-rocm10-plugin[device-gfx1034,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm10-device-gfx1035 = ["jax-rocm10-plugin[device-gfx1035,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm10-device-gfx1036 = ["jax-rocm10-plugin[device-gfx1036,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm10-device-gfx1100 = ["jax-rocm10-plugin[device-gfx1100,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm10-device-gfx1101 = ["jax-rocm10-plugin[device-gfx1101,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm10-device-gfx1102 = ["jax-rocm10-plugin[device-gfx1102,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm10-device-gfx1103 = ["jax-rocm10-plugin[device-gfx1103,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm10-device-gfx1150 = ["jax-rocm10-plugin[device-gfx1150,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm10-device-gfx1151 = ["jax-rocm10-plugin[device-gfx1151,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm10-device-gfx1152 = ["jax-rocm10-plugin[device-gfx1152,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm10-device-gfx1153 = ["jax-rocm10-plugin[device-gfx1153,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm10-device-gfx1200 = ["jax-rocm10-plugin[device-gfx1200,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm10-device-gfx1201 = ["jax-rocm10-plugin[device-gfx1201,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm10-device-gfx1250 = ["jax-rocm10-plugin[device-gfx1250,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm10-device-gfx908 = ["jax-rocm10-plugin[device-gfx908,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm10-device-gfx90a = ["jax-rocm10-plugin[device-gfx90a,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm10-device-gfx942 = ["jax-rocm10-plugin[device-gfx942,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm10-device-gfx950 = ["jax-rocm10-plugin[device-gfx950,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm7 = ["jax-rocm7-plugin[device-all,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm7-device-gfx1010 = ["jax-rocm7-plugin[device-gfx1010,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm7-device-gfx1011 = ["jax-rocm7-plugin[device-gfx1011,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm7-device-gfx1012 = ["jax-rocm7-plugin[device-gfx1012,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm7-device-gfx1030 = ["jax-rocm7-plugin[device-gfx1030,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm7-device-gfx1031 = ["jax-rocm7-plugin[device-gfx1031,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm7-device-gfx1032 = ["jax-rocm7-plugin[device-gfx1032,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm7-device-gfx1033 = ["jax-rocm7-plugin[device-gfx1033,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm7-device-gfx1034 = ["jax-rocm7-plugin[device-gfx1034,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm7-device-gfx1035 = ["jax-rocm7-plugin[device-gfx1035,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm7-device-gfx1036 = ["jax-rocm7-plugin[device-gfx1036,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm7-device-gfx1100 = ["jax-rocm7-plugin[device-gfx1100,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm7-device-gfx1101 = ["jax-rocm7-plugin[device-gfx1101,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm7-device-gfx1102 = ["jax-rocm7-plugin[device-gfx1102,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm7-device-gfx1103 = ["jax-rocm7-plugin[device-gfx1103,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm7-device-gfx1150 = ["jax-rocm7-plugin[device-gfx1150,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm7-device-gfx1151 = ["jax-rocm7-plugin[device-gfx1151,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm7-device-gfx1152 = ["jax-rocm7-plugin[device-gfx1152,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm7-device-gfx1153 = ["jax-rocm7-plugin[device-gfx1153,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm7-device-gfx1200 = ["jax-rocm7-plugin[device-gfx1200,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm7-device-gfx1201 = ["jax-rocm7-plugin[device-gfx1201,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm7-device-gfx1250 = ["jax-rocm7-plugin[device-gfx1250,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm7-device-gfx908 = ["jax-rocm7-plugin[device-gfx908,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm7-device-gfx90a = ["jax-rocm7-plugin[device-gfx90a,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm7-device-gfx942 = ["jax-rocm7-plugin[device-gfx942,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm7-device-gfx950 = ["jax-rocm7-plugin[device-gfx950,with-rocm] (==0.12.1.*)", "jaxlib (==0.12.1)"]
+rocm7-local = ["jax-rocm7-plugin (==0.12.1.*)", "jaxlib (==0.12.1)"]
+tpu = ["jaxlib (==0.12.1)", "libtpu (==0.0.53.*)", "requests"]
+xprof = ["xprof"]
+
+[[package]]
+name = "jaxlib"
+version = "0.12.1"
+description = "XLA library for JAX"
+optional = false
+python-versions = ">=3.12"
+groups = ["main"]
+files = [
+    {file = "jaxlib-0.12.1-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:c5ac929cc5037fdb000ce5fc16d13a9e114819ac4d60a285b073a4ebc091b8d4"},
+    {file = "jaxlib-0.12.1-cp312-cp312-manylinux_2_27_aarch64.whl", hash = "sha256:1ff691a4b1cc5cf7f958ff95d21d3f00d9a6c44b522b8bbe93a57b021dc92429"},
+    {file = "jaxlib-0.12.1-cp312-cp312-manylinux_2_27_x86_64.whl", hash = "sha256:596a8a7772aa92e32c2c40967577c3ffea00645544e2166a54f50208b4003f42"},
+    {file = "jaxlib-0.12.1-cp312-cp312-win_amd64.whl", hash = "sha256:f6ce9ee0fbff98d7d462d2cbc80ce965da0be9d961998200574862c0268c2253"},
+    {file = "jaxlib-0.12.1-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:0bc51f229b684a3fe9b6d430428db16c265d436a879762fd35c88ef233c0e915"},
+    {file = "jaxlib-0.12.1-cp313-cp313-manylinux_2_27_aarch64.whl", hash = "sha256:7f120a3e77c6c6f8ab5246e920ff3260d1a4b045f3a9b6990baf403f7844c221"},
+    {file = "jaxlib-0.12.1-cp313-cp313-manylinux_2_27_x86_64.whl", hash = "sha256:5d29c5f1ff9643ef8366a24cfecedb8a98c0bad4f0c87d5d9a47721c6fc193d8"},
+    {file = "jaxlib-0.12.1-cp313-cp313-win_amd64.whl", hash = "sha256:005ecb763d42e1f5e589c249c907cb7c5941da886651f60e8e9548002a674d2d"},
+    {file = "jaxlib-0.12.1-cp314-cp314-macosx_11_0_arm64.whl", hash = "sha256:9f0f66f06c5cc4ada97fa40803adedd46c343e877a83b4e4cecff22d8bb56464"},
+    {file = "jaxlib-0.12.1-cp314-cp314-manylinux_2_27_aarch64.whl", hash = "sha256:df9fd653039b6b741ed2eabea55c9adbce65558d294b05d3590202ac3659248b"},
+    {file = "jaxlib-0.12.1-cp314-cp314-manylinux_2_27_x86_64.whl", hash = "sha256:85007bf4dadbcdfd84b951cdbfefd3c418c2ff2c30e93760dc83166847345112"},
+    {file = "jaxlib-0.12.1-cp314-cp314-win_amd64.whl", hash = "sha256:68fb189dd56e8189171e5a85b1b368bfb9395cb4ee0073453b70f21ec8b8c5aa"},
+    {file = "jaxlib-0.12.1-cp314-cp314t-macosx_11_0_arm64.whl", hash = "sha256:89bb3c2f76f4c55044fd95c82cc1aa1e77f4fcd730494a648ce67edb1977e953"},
+    {file = "jaxlib-0.12.1-cp314-cp314t-manylinux_2_27_aarch64.whl", hash = "sha256:7294b6c586842463f770876e99ab8126a75e721c3567cd73f13a467068be07f9"},
+    {file = "jaxlib-0.12.1-cp314-cp314t-manylinux_2_27_x86_64.whl", hash = "sha256:654d90ef59489966c9b077cc8f0632629d0fde29a08cc78db69495e1ab17f110"},
+    {file = "jaxlib-0.12.1-cp315-cp315-macosx_11_0_arm64.whl", hash = "sha256:e36732f0824fa819d10a0f5811241a378af5f1c55b336734e1007a3bc6d82ffa"},
+    {file = "jaxlib-0.12.1-cp315-cp315-manylinux_2_27_aarch64.whl", hash = "sha256:7e094d917219aaea4be9189b2bd0941aaadac79a95db06768a6230636931e0e2"},
+    {file = "jaxlib-0.12.1-cp315-cp315-manylinux_2_27_x86_64.whl", hash = "sha256:61b631f9897aaf7d0d032c2c86c3eb094a36a9097e734bf2806ca26ca23b82f6"},
+    {file = "jaxlib-0.12.1-cp315-cp315-win_amd64.whl", hash = "sha256:3bdde574c03e568798efc738b58abea4005fca57321e5609b8f0e93c6fe7b333"},
+    {file = "jaxlib-0.12.1-cp315-cp315t-macosx_11_0_arm64.whl", hash = "sha256:412334e27d46a325b6a2d369a85d19c7452aab0cae29ea07da57f7afd981057f"},
+    {file = "jaxlib-0.12.1-cp315-cp315t-manylinux_2_27_aarch64.whl", hash = "sha256:86428d22825802e11bef8bcfe390d10cea1a6a6932cc8fd1ef63ce8b9ca8d575"},
+    {file = "jaxlib-0.12.1-cp315-cp315t-manylinux_2_27_x86_64.whl", hash = "sha256:3cb24d4ff03648236f5b01757b34487eb3415883519c67338b7479d6c0c56952"},
+]
+
+[package.dependencies]
+ml_dtypes = ">=0.5.0"
+numpy = ">=2.0"
+scipy = ">=1.14"
+
+[[package]]
 name = "jedi"
 version = "0.20.1"
 description = "An autocompletion tool for Python that can be used for text editors."
@@ -801,6 +924,66 @@ traitlets = "*"
 test = ["flake8", "matplotlib", "nbdime", "nbval", "notebook", "pytest"]
 
 [[package]]
+name = "ml-dtypes"
+version = "0.7.0"
+description = "ml_dtypes is a stand-alone implementation of several NumPy dtype extensions used in machine learning."
+optional = false
+python-versions = ">=3.10"
+groups = ["main"]
+files = [
+    {file = "ml_dtypes-0.7.0-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:1320128663539a88722491e5cfd079c611107da27e72d01d34d89cf6efe5833b"},
+    {file = "ml_dtypes-0.7.0-cp310-cp310-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:14f81bdbbde76bc3d44f2b030f23cede43bf7706948fcec270dc663354cba2da"},
+    {file = "ml_dtypes-0.7.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:ef2c347e71f11625603983b426b42f5cf59c0e482d5fcb6e16a78d61e3ec9bd3"},
+    {file = "ml_dtypes-0.7.0-cp310-cp310-win_amd64.whl", hash = "sha256:362953f74e5ca2f2eb869ee1d3b8397d9542b53470c5e7cc18e6627c3bc35549"},
+    {file = "ml_dtypes-0.7.0-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:8b50c4b98e4bfde3b86fa8a623658ff5fca13c42d936f8223ad8bcf82d6fa400"},
+    {file = "ml_dtypes-0.7.0-cp311-cp311-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:7c094b42cb01f21e37e602a5cfe502ddaf6b5c60f66a162fd1e61f9a586558cb"},
+    {file = "ml_dtypes-0.7.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:d214c910cabaf80aa1ee37b0f25131e20d7a6474182e5293a68985b0421299da"},
+    {file = "ml_dtypes-0.7.0-cp311-cp311-win_amd64.whl", hash = "sha256:15fa56d3b2b31fce16c13935ff8693f95c42620fe0f81e93d1f2cdee19425540"},
+    {file = "ml_dtypes-0.7.0-cp311-cp311-win_arm64.whl", hash = "sha256:0302deb4c0c69555f29ca6741458155b302f8294e850f04358c8a07bcdb7caf5"},
+    {file = "ml_dtypes-0.7.0-cp312-cp312-macosx_10_13_universal2.whl", hash = "sha256:3cfe29fc79a00f4555c5319a32c549c10ec075ec888974ab4c0a59598e1f0f48"},
+    {file = "ml_dtypes-0.7.0-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:7366e3ac8630e2bb35e67945391889225e2221c581c0831ec01a8cf50de3461a"},
+    {file = "ml_dtypes-0.7.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:3c4e47f553a04d33886160a9600e2313e5bee8c1c3da997baa23c8fecbfab189"},
+    {file = "ml_dtypes-0.7.0-cp312-cp312-win_amd64.whl", hash = "sha256:0b1d09c91aaa6f38052521d5377cecb1523f50d4aee7783183a955a6544b8ad6"},
+    {file = "ml_dtypes-0.7.0-cp312-cp312-win_arm64.whl", hash = "sha256:b29d506d51d994efce5e1f214a6cab77d96b796c5ab59a63f23d9a8c5b20e4dd"},
+    {file = "ml_dtypes-0.7.0-cp313-cp313-macosx_10_13_universal2.whl", hash = "sha256:1c442cebb388bbe3bcebda9e3864bdbb719a2611742fdd72687b424b5b3a4080"},
+    {file = "ml_dtypes-0.7.0-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:9e0f30247d011782286f9f5b8b0a3fad3f4f945d2a92cb9964c68d566ed17878"},
+    {file = "ml_dtypes-0.7.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:5fb56999e1a03f47af5583af4089e00d04b68f87d4fadd659a5927ecd7687c3d"},
+    {file = "ml_dtypes-0.7.0-cp313-cp313-win_amd64.whl", hash = "sha256:8251e1bd8f68ebf9be6b0cad5ff6acee0e1768f2f45d55addda1a727e81503bf"},
+    {file = "ml_dtypes-0.7.0-cp313-cp313-win_arm64.whl", hash = "sha256:4fbce28a66691c56bb48620349df20a157b2c1bc949a6a1ce60a395a2b23293c"},
+    {file = "ml_dtypes-0.7.0-cp314-cp314-macosx_10_15_universal2.whl", hash = "sha256:364d3b29ef3d06cd7f6bdfd7bd235f8dba104d7aa0de77df31b804d47b7b904f"},
+    {file = "ml_dtypes-0.7.0-cp314-cp314-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:8be8a421dca82572fd554a026d42f8e7aec6c5c9ddae4bbc118cf04051d13445"},
+    {file = "ml_dtypes-0.7.0-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:d0e87fdd2d380fa32f45e117687070b0e312b9f9a431bb0555edcd3a7821cb1d"},
+    {file = "ml_dtypes-0.7.0-cp314-cp314-win_amd64.whl", hash = "sha256:306a494aee4ec6e1fc88cd9d5ce8b84973edb0f05b884fcf3883cf3d79700ba5"},
+    {file = "ml_dtypes-0.7.0-cp314-cp314-win_arm64.whl", hash = "sha256:f5472be87d269572fe6afe2daa46870ed86d1129270c52734fe8485b91b697b2"},
+    {file = "ml_dtypes-0.7.0-cp314-cp314t-macosx_10_15_universal2.whl", hash = "sha256:dc7ac1da0f25d6deef1b37d5653e0b7df63e5396738d7da967a4f80a202fd51f"},
+    {file = "ml_dtypes-0.7.0-cp314-cp314t-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:58828e7a44fdafb8380f98427fdccd418c12af2d875e00647439c832a1be5e14"},
+    {file = "ml_dtypes-0.7.0-cp314-cp314t-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:a34d838528a531724cfcb1ebd201c308176694e5dfa4fcebcfa2590fb96e7e12"},
+    {file = "ml_dtypes-0.7.0-cp314-cp314t-win_amd64.whl", hash = "sha256:3a71fe4a4c323e89058ba828f41d3995203c27c09fed64776173de05e4ad28d1"},
+    {file = "ml_dtypes-0.7.0-cp314-cp314t-win_arm64.whl", hash = "sha256:69aeab7864e8a2beae8b4765945d44e826f82f8003a96a7c1cf3365b6abbaf2b"},
+    {file = "ml_dtypes-0.7.0-cp315-cp315-macosx_10_15_universal2.whl", hash = "sha256:6cc2f03294ca7fc24f231d6341e1f0afe53067cefa739b8c6d10614eb509c67b"},
+    {file = "ml_dtypes-0.7.0-cp315-cp315-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:92d06de5c9ffedb5e4c0809e9a3dec02f5457a9be864a89792f071b07d890a10"},
+    {file = "ml_dtypes-0.7.0-cp315-cp315-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:b24d45184f7508a160d69edf78dd2ed20c9b53f9f1064f52d96f3b800ed98371"},
+    {file = "ml_dtypes-0.7.0-cp315-cp315-win_amd64.whl", hash = "sha256:9a8befe9c3610745515af48696044366b0e15accfcad12350c457fba5443ed21"},
+    {file = "ml_dtypes-0.7.0-cp315-cp315-win_arm64.whl", hash = "sha256:e621dfbc9bc7d75ded2782f58ff22f72eb9deb907e9f0fa09147eb3e6f4ae6aa"},
+    {file = "ml_dtypes-0.7.0-cp315-cp315t-macosx_10_15_universal2.whl", hash = "sha256:6b1b2c9d2acef9d47f157d47c9bbbe12df5814dd7642cd649ad08b4b6c29bb62"},
+    {file = "ml_dtypes-0.7.0-cp315-cp315t-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:313629f5d5d34f419e9b789aa8c8afb4710126449cb12959be2a2f1980a7598a"},
+    {file = "ml_dtypes-0.7.0-cp315-cp315t-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:0d0e6250683fe6fd30cdd161102c1c5eb8a04715667fba4e42a4690cbc104620"},
+    {file = "ml_dtypes-0.7.0-cp315-cp315t-win_amd64.whl", hash = "sha256:0f22e5b28370e2e9c5ce88b66a8ebab28009abbe6fdb8a089a7078c657eb2da9"},
+    {file = "ml_dtypes-0.7.0-cp315-cp315t-win_arm64.whl", hash = "sha256:118495dabbee38719343ce7bcaa7e33f503378c4694311791389375c1854aec8"},
+    {file = "ml_dtypes-0.7.0.tar.gz", hash = "sha256:67fd890fb09d1e068cfe1b4dc8e204430ae7632102b4a4f854b093b6f02b3950"},
+]
+
+[package.dependencies]
+numpy = [
+    {version = ">=2.3.0", markers = "python_version >= \"3.14\""},
+    {version = ">=2.1.0", markers = "python_version == \"3.13\""},
+    {version = ">=2.0.0", markers = "python_version < \"3.13\""},
+]
+
+[package.extras]
+dev = ["absl-py", "pyink", "pylint (>=2.6.0)", "pytest", "pytest-xdist"]
+
+[[package]]
 name = "nest-asyncio2"
 version = "1.7.4"
 description = "Patch asyncio to allow nested event loops"
@@ -886,6 +1069,18 @@ files = [
     {file = "numpy-2.5.5-cp315-cp315t-win_amd64.whl", hash = "sha256:410eab02c6718cb42d06ccbb8604659f3522d2ce06ae70cacd5042092659f5af"},
     {file = "numpy-2.5.5-cp315-cp315t-win_arm64.whl", hash = "sha256:b6ecbc1ff292c6799067d8064a4dd35cd25ba9d1a24aa41dd635d701691a49b5"},
     {file = "numpy-2.5.5.tar.gz", hash = "sha256:5cddc243c75114ba845f01b1f87aca1572dbf7b6c2d88636ed3e1d2bccd7f1bf"},
+]
+
+[[package]]
+name = "opt-einsum"
+version = "3.4.0"
+description = "Path optimization of einsum functions."
+optional = false
+python-versions = ">=3.8"
+groups = ["main"]
+files = [
+    {file = "opt_einsum-3.4.0-py3-none-any.whl", hash = "sha256:69bb92469f86a1565195ece4ac0323943e83477171b91d24c35afe028a90d7cd"},
+    {file = "opt_einsum-3.4.0.tar.gz", hash = "sha256:96ca72f1b886d148241348783498194c577fa30a8faac108586b14f1ba4473ac"},
 ]
 
 [[package]]
@@ -1521,4 +1716,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12"
-content-hash = "b796f491826ba05c106fb54922d744ff1cbae00f1aee400aeb10ff9bcb29800a"
+content-hash = "638ec713f1c5aec40c195894a4fff78eace6cb4d397a7cececf99a6bf6abe494"
